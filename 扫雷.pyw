@@ -13,26 +13,7 @@ gamemenu.add_command(label='New', command=hello, accelerator='F2')
 gamemenu.add_command(label
 mouse = tk.Menu(optionmenu, tearoff=0)
 optionmenu.add_cascade(label="Mouse Setup", menu=mouse)
-mouse.add_command(label="Open Mouse Control Panel", accelerator="M")
-                  
-optionmenu.add_separator()
-    #IRC
-irc = tk.Menu(optionmenu, tearoff=0)
-optionmenu.add_cascade(label="IRC Addon", menu=irc)
-irc.add_command(label="Copy Last Game Info", accelerator="Ctrl+L")
-irc.add_command(label="Copy Game Info by Number")
-irc.add_command(label="Copy Time Records Info")
-irc.add_command(label="Copy 3BV/s Records Info")
-irc.add_command(label="Copy Averages Info")
-irc.add_command(label="Copy Today`s BEG Playing Info")
-irc.add_command(label="Copy Today`s INT Playing Info")
-irc.add_command(label="Copy Today`s EXP Playing Info")
-irc.add_separator()
-        #IRC Text
-irc_text = tk.Menu(irc, tearoff=0)
-irc.add_cascade(label="IRC Text Format", menu=irc_text)
-irc_text.add_command(label="mlRC")
-irc_text.add_command(label="CGI")
+
 irc_text.add_command(label="TXT")
 irc.add_command(label="Silent Mode Output")
 
